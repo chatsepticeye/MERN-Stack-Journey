@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: orange;
+            --primary-width:50px;
+        }
+    .container{
+        background-color: beige;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .box{
+        background-color: aqua;
+        height:400px;
+        width:var(--custom-width);
+        border:1px solid var(--primary-color);
+        margin:5px;
+        padding:5px;
+        /* box-shadow: 10px -20px brown; */
+        /* box-shadow: 10px -20px -30px brown; */
+        box-shadow: 10px -20px 30px 40px var(--primary-color);
+        /* box-shadow: inset 10px -20px  40px brown; */
+        /* box-shadow: 10px 20px red, 30px 40px greenyellow; */
+    }
+    img{
+        height: 200px;
+
+    }
+    #h1{
+        /* text-shadow: 2px 3px 1px white; */
+        text-shadow: 2px 4px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.jpg" alt="">
+            <h2 id="h1">Welcome to the paradise!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit eligendi quae nihil eum, repellat ullam 
+                autem amet. Aliquid quod quisquam debitis, architecto at quidem perspiciatis modi
+                 illum quibusdam, neque dolorem atque labore qui veniam maiores harum aspernatur, inventore id iusto?</p>
+        </div>
+    </div>
+</body>
+</html>
