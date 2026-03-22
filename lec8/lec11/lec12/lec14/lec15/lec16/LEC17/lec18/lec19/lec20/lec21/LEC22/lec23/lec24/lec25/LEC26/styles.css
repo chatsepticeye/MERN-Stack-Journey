@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#navlist{
+    font-size: 2.8rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+   
+     width:100%;
+     padding:15px;
+}
+nav{
+    width:100%;
+    overflow-x: none;
+    padding-right: 2rem;
+}
+.container{
+    overflow-x: none ;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    align-items: center;
+    background-color: #e2e5e2;
+    background-image: linear-gradient(98deg,#e2e5e2 0%,#ffffff 100%);
+    
+}
+.navcontainer{
+    width:100%;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160 deg,#0093E9,#80D0C7 100%);
+    /* background-color: rgba(62, 64, 158, 0.757); */
+    min-height: 80px;
+    display: flex;
+    width:100vw;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    align-items: center;
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: azure;
+}
+a{
+    text-decoration: none;
+    color:azure;
+}
+#navitem{
+    display: flex;
+    gap:40px;
+
+}
+.footerbox{
+    background-color: #0093E9;
+    background-image: linear-gradient(160 deg,#0093E9,#80D0C7 100%);
+    text-align: center;
+    min-height: 40px;
+
+}
+.footerbox p{
+     color: azure;
+     font-size: 2rem;
+
+}
+.contentbox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: auto;
+    
+    box-shadow: 1px 1px 30px black;
+    background-color: white;
+    padding: 3rem;
+}
+.item{
+    display: flex;
+    gap:space-around;
+    align-items: center;
+}
+.right-box img{
+    height: 100px;
+    width:100px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+
+}
+.right-box :hover{
+    transform: scale(1.2);
+
+}
+.rightbox.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(31, 23, 16, 0.596);
+    border-radius: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition: all 0.3s linear 0s;
+}
+.rightbox:hover.overlay{
+    opacity:1;
+
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size:2rem;
+}
+.ingbox{
+    font:1.3rem;
+}
+.recipebox{
+    font-size: 1.1rem;
+}
