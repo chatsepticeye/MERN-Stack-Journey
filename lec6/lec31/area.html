@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template areas</template></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .body{
+            height: 100%;
+            width:100%;
+
+        }
+        .container{
+            height: 100%;
+            width:100%;
+            display: grid;
+            gap:1rem;
+            padding:4rem;
+            background-color: rgb(14, 13, 13);
+            grid-template-areas: 
+            "header header header"
+            "sidebar content1 content1"
+            "sidebar content2 content3"
+            "footer footer footer"
+        }
+        .items{
+            background-color: rgb(95, 161, 139);
+            padding:1rem;
+            color:aliceblue;
+            border:2px solid rgb(54, 227, 94);
+        }
+        #header{
+            grid-area:header;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #content1{
+            grid-area: content1;
+        }
+        #content2{
+            grid-area: content2;
+        }
+        #content3{
+            grid-area: content3;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="header">header</div>
+        <div class="items" id="sidebar">sidebar</div>
+        <div class="items" id="content1">content1</div>
+        <div class="items" id="content2">content2</div>
+        <div class="items" id="content3">content3</div>
+        <div class="items" id="footer">footer</div>
+    </div>
+    
+</body>
+</html>
