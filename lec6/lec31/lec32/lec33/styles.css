@@ -454,8 +454,30 @@ body{
     display:block;
     
 } 
-.newsletter-container{
+/* .newsletter-container{
     padding:2rem;
+ } */
+  /* --- Bonus Step: Two-Column Layout Sync --- */
+
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* creates space between the image and text */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.news-left,
+.news-right {
+    width: 50%; /* sets up two equal-width columns */
+}
+
+.newsletter-image {
+    max-width: 100%; /* Image can never be wider than its column */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 0.5rem; /* Optional: adds nice rounded edges like the video */
 }
     
 }
@@ -515,4 +537,109 @@ body{
    padding: 0 3rem;
    font-size:0.76rem;
    color:#777;
+}
+.footer-container{
+    background-color: var(--background-color);
+    margin: 0 auto;
+    padding:0 2rem;
+    display:flex;
+    flex-direction:column;
+    max-width:1280px;
+}
+.footer{
+    max-width:1280px;
+    padding:4rem 2rem;
+    text-align:left;
+    align-items:flex-start;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+.footer-top img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.footer-top{
+    width:34%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comp-logo {
+    display: flex;
+    flex-direction: column; /* This forces the text to sit BELOW the logo */
+    justify-content: flex-start;
+    align-items:flex-start;
+    /* margin-top:2.5rem; */
+    gap: 1.2rem;            /* Adds uniform space between logo, text, and icons */
+}
+.logo-link{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:0.8rem;
+    font-size:1.3rem;
+    font-weight:bold;
+    margin-top: 2.5rem;
+}
+/* .logo-svg img{
+    display:flex;
+    flex-direction:flex-start;
+} */
+.logo-svg{
+    width:2rem;
+    height:2rem;
+}
+.filler-text{
+    font-size:1rem;
+    color:#777;
+}
+.footer-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem;
+    width:60%;
+}
+
+.social-icon{
+    width:1.5rem;
+    height:1.5rem;
+}
+.footer-grid-heading{
+    font-size:1.05rem;
+    font-weight:bold;
+    color:var(--text-color);
+
+}
+ul{
+    list-style-type:none;
+}
+.footer-link{
+    color:#777;
+    font-size:1rem;
+
+}
+.footer-links-list{
+    display:flex;
+    flex-direction:column;
+    gap:1.8rem;
+
+}
+.social{
+    display:flex;
+    gap:0.7rem;
+
+}
+.footer-grid-heading{
+    margin-bottom:0.9rem;
+}
+.footer-copyright{
+    color:var(--gray);
+    font-size:0.75rem;
+    padding-bottom:2rem;
+    margin-top:2rem;
+    padding-top:1.15rem;
+    border-top:1px solid #E5E7EB;
 }
